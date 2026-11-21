@@ -1,0 +1,92 @@
+name: Bug report
+description: Something in TrapRush is broken or not working the way it should.
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping make TrapRush better. Issues are public, so don't include passwords, emails or other
+        personal information. For account problems, bans or purchases, open a private ticket on
+        [Discord](https://discord.gg/hw6Wqmw7A7) instead.
+  - type: checkboxes
+    id: searched
+    attributes:
+      label: Before you post
+      options:
+        - label: I searched the existing issues and this bug hasn't been reported yet.
+          required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Where do you play?
+      options:
+        - Browser on a computer (traprush.io)
+        - Browser on a phone or tablet (traprush.io)
+        - Steam on Windows
+        - Steam on Mac
+        - CrazyGames
+        - Discord Activity
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Device and browser
+      description: For example "Windows 11, Chrome", "iPhone 15, Safari" or "MacBook Air M2".
+    validations:
+      required: false
+  - type: dropdown
+    id: area
+    attributes:
+      label: What part of the game?
+      options:
+        - Racing and movement
+        - Items and traps
+        - Building
+        - Maps
+        - Rooms, lobby and joining games
+        - Connection, lag or disconnects
+        - Account, login, profile or level
+        - Shop, skins, hats or battle pass
+        - Daily challenges or achievements
+        - Menus and settings
+        - Sound or graphics
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: Describe the bug. What did you expect to happen instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: How can we make it happen again?
+      description: The steps that lead to the bug. If it only happened once, say so.
+      placeholder: |
+        1. Create a room on the Factory map
+        2. Place a spring next to a wall
+        3. Jump on the spring
+        4. ...
+    validations:
+      required: false
+  - type: input
+    id: when
+    attributes:
+      label: When did it happen?
+      description: The date and roughly what time, and the room code if you remember it. This helps us find it in the logs.
+      placeholder: "Nov 26, around 8pm EST, room ABCD"
+    validations:
+      required: false
+  - type: textarea
+    id: media
+    attributes:
+      label: Screenshots or video
+      description: Drag images or a short clip into this box. A clip is the fastest way for us to understand the bug.
+    validations:
+      required: false

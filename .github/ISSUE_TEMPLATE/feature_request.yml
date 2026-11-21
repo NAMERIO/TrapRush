@@ -1,0 +1,52 @@
+name: Idea or feature request
+description: Suggest a new item, map, skin, mode or improvement.
+title: "[Idea] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Got an idea for TrapRush? We read every suggestion. Please check the existing issues first, and give a 👍 to
+        ideas you like instead of posting the same one again.
+  - type: checkboxes
+    id: searched
+    attributes:
+      label: Before you post
+      options:
+        - label: I searched the existing issues and nobody has suggested this yet.
+          required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of idea is it?
+      options:
+        - New item or trap
+        - New map
+        - Skin, hat or other cosmetic
+        - Game mode or room setting
+        - Balance change
+        - Menus, controls or quality of life
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea
+      description: Describe it as clearly as you can. How would it work in a match?
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why would it make the game better?
+      description: What problem does it solve, or what would it add to matches?
+    validations:
+      required: false
+  - type: textarea
+    id: media
+    attributes:
+      label: Sketches or examples
+      description: Drawings, mockups or examples from other games are welcome.
+    validations:
+      required: false
