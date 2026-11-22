@@ -24,7 +24,7 @@ here.
 
 | Platform           | Link                                                                 |
 | ------------------ | -------------------------------------------------------------------- |
-| Browser            | [traprush.io](https://traprush.io), on desktop, phone or tablet      |
+| Browser (Desktop, Phone or Tablet) | [traprush.io](https://traprush.io)      |
 | Steam (Windows, Mac) | [store.steampowered.com/app/5518570](https://store.steampowered.com/app/5518570/TrapRush/) |
 
 ## What's in the game
